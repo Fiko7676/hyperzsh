@@ -8,3 +8,8 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # Load OMZ
 source $HYPERZSH/oh-my-zsh.zsh
+
+# Load plugins
+for file in $HYPERZSH/plugins/*.zsh; do
+  source "$file"
+done
